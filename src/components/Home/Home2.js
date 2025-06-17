@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/my-image.jpg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -15,7 +15,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hello! I’m <b className="purple">Panuganti Sasank Satya Pavan Sai</b>, a passionate and driven
+              Hello! I'm <b className="purple">Panuganti Sasank Satya Pavan Sai</b>, a passionate and driven
               final-year <b className="purple">Computer Science</b> student specialized in{" "}
               <b className="purple">AI & ML</b>.
               <br />
@@ -47,12 +47,23 @@ function Home2() {
               </i>.
               <br />
               <br />
-              When I’m not coding, I’m probably reading, gaming, or exploring new tech on GitHub.
+              When I'm not coding, I'm probably reading, gaming, or exploring new tech on GitHub.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img 
+                src={myImg} 
+                className="img-fluid" 
+                alt="Sasank's photo"
+                style={{ 
+                  borderRadius: "50%",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                  width: "300px",
+                  height: "300px",
+                  objectFit: "cover"
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -60,7 +71,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Let’s <span className="purple">connect</span> and collaborate on something amazing!
+              Let's <span className="purple">connect</span> and collaborate on something amazing!
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

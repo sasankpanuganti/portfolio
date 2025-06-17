@@ -4,7 +4,7 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiVercel,
-  SiWindows,
+  SiMicrosoft,
   SiGithub,
   SiDocker,
   SiFigma,
@@ -16,7 +16,7 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {/* OS */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
+        <SiMicrosoft />
       </Col>
 
       {/* VS Code */}
